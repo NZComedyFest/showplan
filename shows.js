@@ -19,4 +19,4 @@ const shows = [
 {id:18, title:"henry yan", date:"46154", time:"0.770833333333333", venue:"Studio"},
 {id:19, title:"sean coller", date:"46161", time:"0.8125", venue:"Main Theatre"},
 {id:20, title:"Janaye Henry", date:"46162", time:"20.45", venue:"Basement"},
-  }
+  ]

@@ -1,56 +1,74 @@
-/* Container for all weeks */
-#schedule {
+:root {
+  --primary-color: #ff5a5f;
+  --secondary-color: #333;
+  --background-color: #fefefe;
+  --week-color: #ff9999;
+  --day-color: #f2f2f2;
+  --conflict-color: #ff4d4d;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--background-color);
+  color: var(--secondary-color);
+  margin: 20px;
+}
+
+.container {
   max-width: 800px;
   margin: auto;
-  font-family: Arial, sans-serif;
 }
 
-/* Week header */
 .week-header {
-  background-color: #333;
+  background-color: var(--week-color);
   color: #fff;
-  padding: 10px;
-  border-radius: 5px;
+  padding: 12px;
+  border-radius: 8px;
   margin-top: 20px;
+  font-size: 1.3em;
+  font-weight: bold;
 }
 
-/* Day header */
 .day-header {
-  background-color: #f2f2f2;
-  padding: 5px 10px;
+  background-color: var(--day-color);
+  padding: 8px 12px;
   margin-top: 10px;
   font-weight: bold;
-  border-left: 4px solid #333;
+  border-left: 6px solid var(--primary-color);
 }
 
-/* Show cards */
 .show-card {
   border: 1px solid #ccc;
-  padding: 8px 12px;
+  padding: 10px 15px;
   margin: 5px 0;
-  border-radius: 6px;
-  background-color: #fafafa;
+  border-radius: 8px;
+  background-color: #ffffff;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-shadow: 1px 2px 6px rgba(0,0,0,0.05);
+  transition: transform 0.15s;
 }
 
-/* Conflict highlight */
+.show-card:hover {
+  transform: translateY(-2px);
+}
+
 .show-card.conflict {
-  border-color: red;
+  border-color: var(--conflict-color);
   background-color: #ffe5e5;
-  color: red;
+  color: var(--conflict-color);
   font-weight: bold;
 }
 
-/* Show info on left */
 .show-info {
   display: flex;
   flex-direction: column;
 }
 
-/* Venue and time */
-.show-meta {
-  font-size: 0.9em;
-  color: #555;
+@media (max-width: 600px) {
+  .show-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }

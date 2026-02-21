@@ -1,21 +1,56 @@
-.show-card {
-  border: 1px solid #ccc;
-  margin: 5px 0;
-  padding: 5px 10px;
-  border-radius: 5px;
+/* Container for all weeks */
+#schedule {
+  max-width: 800px;
+  margin: auto;
+  font-family: Arial, sans-serif;
 }
 
-.conflict {
+/* Week header */
+.week-header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+/* Day header */
+.day-header {
+  background-color: #f2f2f2;
+  padding: 5px 10px;
+  margin-top: 10px;
+  font-weight: bold;
+  border-left: 4px solid #333;
+}
+
+/* Show cards */
+.show-card {
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  margin: 5px 0;
+  border-radius: 6px;
+  background-color: #fafafa;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Conflict highlight */
+.show-card.conflict {
+  border-color: red;
+  background-color: #ffe5e5;
   color: red;
   font-weight: bold;
 }
 
-h2 {
-  margin-top: 20px;
-  border-bottom: 2px solid #333;
+/* Show info on left */
+.show-info {
+  display: flex;
+  flex-direction: column;
 }
 
-h3 {
-  margin-top: 10px;
+/* Venue and time */
+.show-meta {
+  font-size: 0.9em;
   color: #555;
 }

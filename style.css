@@ -1,38 +1,21 @@
-body{
-font-family:Arial;
-background:#f4f4f4;
-margin:0;
+.show-card {
+  border: 1px solid #ccc;
+  margin: 5px 0;
+  padding: 5px 10px;
+  border-radius: 5px;
 }
 
-.container{
-max-width:420px;
-margin:auto;
-padding:20px;
+.conflict {
+  color: red;
+  font-weight: bold;
 }
 
-button{
-width:100%;
-padding:15px;
-border:none;
-border-radius:12px;
-background:black;
-color:white;
-font-size:18px;
-margin-top:20px;
+h2 {
+  margin-top: 20px;
+  border-bottom: 2px solid #333;
 }
 
-.show-option{
-display:block;
-background:white;
-padding:12px;
-margin-top:10px;
-border-radius:10px;
-}
-
-.show-card{
-background:white;
-padding:15px;
-margin-top:12px;
-border-radius:14px;
-box-shadow:0 5px 15px rgba(0,0,0,0.1);
+h3 {
+  margin-top: 10px;
+  color: #555;
 }

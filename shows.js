@@ -1,5 +1,5 @@
 const shows = [
-{id:1, title:"Comedy Gala 1", date:"2026-03-01", time:"19:00", venue:"Main Theatre"},
+{id:1, title:"Comedy Poo 1", date:"2026-03-01", time:"19:00", venue:"Main Theatre"},
 {id:2, title:"Late Laughs 2", date:"2026-03-01", time:"21:00", venue:"Basement"},
 {id:3, title:"Improv Night 3", date:"2026-03-02", time:"18:30", venue:"Studio"},
 {id:4, title:"Funny Show 4", date:"2026-03-02", time:"20:00", venue:"Main Theatre"},

@@ -1,31 +1,34 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Festival Planner</title>
 
-<link rel="stylesheet" href="style.css">
+  <!-- Google Fonts for branding -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<div class="container">
+  <div class="container">
+    <h1>Plan Your Festival</h1>
 
-<h1>Plan Your Festival</h1>
+    <!-- Shows checkbox list -->
+    <div id="showList"></div>
 
-<div id="showList"></div>
+    <!-- Button to build itinerary -->
+    <button onclick="buildPlan()">Create My Itinerary</button>
 
-<button onclick="buildPlan()">
-Create My Itinerary
-</button>
+    <!-- Output -->
+    <div id="schedule"></div>
+  </div>
 
-<div id="schedule"></div>
-
-</div>
-
-<script src="shows.js"></script>
-<script src="script.js"></script>
-
+  <!-- Show data -->
+  <script src="shows.js"></script>
+  <!-- Planner logic -->
+  <script src="script.js"></script>
 </body>
 </html>
